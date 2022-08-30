@@ -12,8 +12,11 @@ import Firebase
 class FirebaseManager {
     static let shared = FirebaseManager()
     
+    var auth: Auth
+    
     init(){
         FirebaseApp.configure()
+        auth = Auth.auth()
     }
     //Auth
     //SignIn

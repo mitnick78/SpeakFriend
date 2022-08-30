@@ -9,10 +9,10 @@ import SwiftUI
 
 @main
 struct SpeakFriendsApp: App {
-    let manager = FirebaseManager()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(authVm: AuthViewModel())
         }
     }
 }
